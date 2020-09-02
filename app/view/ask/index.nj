@@ -1,0 +1,13 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, viewport-fit=cover, target-densitydpi=device-dpi">
+    <link href="public/css/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="index">
+        <div>
+            index
+        </div>
+        <img src="public/images/consult-vip.jpg" alt="">
+    </div>
+</body>
