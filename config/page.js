@@ -3,7 +3,7 @@ const originData = {
     middlewares: ['error-handler'],
     routes: [
         {
-            path: '/index',
+            path: '/ask/index',
             actions: [
                 {
                     verb: 'get',
@@ -11,6 +11,18 @@ const originData = {
                     name: 'homeIndex',
                     title: 'homeIndex',
                     viewTpl: 'ask/index',
+                },
+            ]
+        },
+        {
+            path: '/login',
+            actions: [
+                {
+                    verb: 'get',
+                    controller: 'wap.user.login',
+                    name: 'userLogin',
+                    title: 'userLogin',
+                    viewTpl: 'login',
                 },
             ]
         },

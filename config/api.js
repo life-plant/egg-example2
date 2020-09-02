@@ -2,11 +2,11 @@ const originData = {
     base: '/api',
     routes: [
         {
-            path: '/getAuthorList',
+            path: '/login',
             actions: [
                 {
-                    verb: 'get', 
-                    controller: 'api.author.getAuthorList'
+                    verb: 'post', 
+                    controller: 'api.user.login'
                 }
             ]
         },

@@ -17,6 +17,12 @@ module.exports = (appInfo) => {
                 path.join(appInfo.baseDir, 'app/view'),
             ].join(',')
         },
-        pageData
+        security: {
+            csrf: {
+                queryName: '_csrf', // 通过 query 传递 CSRF token 的默认字段为 _csrf
+                bodyName: '_csrf', // 通过 body 传递 CSRF token 的默认字段为 _csrf
+            },
+        },
+        pageData,
     }
 }

@@ -10,4 +10,6 @@
         </div>
         <img src="public/images/consult-vip.jpg" alt="">
     </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="public/js/index.js"></script>
 </body>

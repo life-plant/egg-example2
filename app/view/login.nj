@@ -1,0 +1,13 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, user-scalable=no, viewport-fit=cover, target-densitydpi=device-dpi">
+    <link href="public/css/common.css" rel="stylesheet">
+</head>
+<body>
+    <form method="POST" action="/api/login?_csrf={{ ctx.csrf | safe }}&return_url={{ctx.query.return_url}}" class="login-form" enctype="multipart/form-data"  target="nm_iframe">
+        <input name="name"><br>
+        <input name="password" type="password"><br>
+        <button type="submit">login</button>
+    </form>
+</body>
