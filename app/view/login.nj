@@ -5,9 +5,13 @@
     <link href="public/css/common.css" rel="stylesheet">
 </head>
 <body>
-    <form method="POST" action="/api/login?_csrf={{ ctx.csrf | safe }}&return_url={{ctx.query.return_url}}" class="login-form" enctype="multipart/form-data"  target="nm_iframe">
+    <form method="POST" action="/api/login" class="login-form" enctype="multipart/form-data" id='JLoginSubmit'>
         <input name="name"><br>
         <input name="password" type="password"><br>
+        <input name="return_url" type="hidden" value="{{ctx.query.return_url}}"><br>
         <button type="submit">login</button>
     </form>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="public/js/user.js"></script>
 </body>
